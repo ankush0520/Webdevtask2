@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoDrive Car Launch</title>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            border-bottom: 1px solid #ddd;
+        }
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #4CAF50;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+        .cta {
+            background-color: #4CAF50;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        #hero {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+            text-align: center;
+        }
+        #hero .hero-content {
+            margin-bottom: 30px;
+        }
+        #hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        #hero p {
+            font-size: 18px;
+            color: #666;
+        }
+        #hero .hero-image img {
+            max-width: 100%;
+            height: auto;
+        }
+        #features {
+            background-color: #fff;
+            padding: 50px 0;
+        }
+        #features h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        .features-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .feature-item {
+            text-align: center;
+            flex: 1 1 200px;
+            margin: 20px;
+        }
+        .feature-item img {
+            max-width: 100px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        #testdrive {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+            text-align: center;
+        }
+        #testdrive h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        #testdrive form {
+            display: inline-block;
+            text-align: left;
+            max-width: 400px;
+        }
+        #testdrive label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        #testdrive input[type="text"],
+        #testdrive input[type="email"],
+        #testdrive input[type="date"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        #testdrive input[type="submit"] {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        #testimonials {
+            background-color: #fff;
+            padding: 50px 0;
+        }
+        #testimonials h2 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 40px;
+        }
+        .testimonials-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .testimonial-item {
+            flex: 1 1 300px;
+            margin: 20px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        blockquote {
+            margin: 0;
+            font-style: italic;
+            color: #666;
+        }
+        cite {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .footer-logo {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+        .footer-navigation ul {
+            list-style: none;
+            padding: 0;
+        }
+        .footer-navigation ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        .footer-navigation ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+        .footer-social a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .footer-social img {
+            max-width: 24px;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">EcoDrive Car</div>
+            <nav>
+                <ul>
+                    <li><a href="#features">Features</a></li>
+                    <li><a href="#testdrive">Test Drive</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="#testdrive" class="cta">Book a Test Drive</a>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Introducing the All-New EcoDrive Car</h1>
+                <p>Experience the future of driving with unparalleled efficiency and cutting-edge technology.</p>
+                <a href="#features" class="cta">Discover More</a>
+            </div>
+            <div class="hero-image">
+                <img src="1.jpg" alt="EcoDrive Car">
+            </div>
+        </div>
+    </section>
+
+    <section id="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <img src="2.jpg" alt="Feature 1">
+                    <h3>Advanced Battery Life</h3>
+                    <p>Drive up to 400 miles on a single charge.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="3.jpg" alt="Feature 2">
+                    <h3>Fast Charging</h3>
+                    <p>Get 80% charge in just 30 minutes.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="4.jpg" alt="Feature 3">
+                    <h3>Autonomous Driving</h3>
+                    <p>Enjoy the convenience of hands-free driving.</p>
+                </div>
+                <div class="feature-item">
+                    <img src="5.jpg" alt="Feature 4">
+                    <h3>Eco-Friendly Materials</h3>
+                    <p>Built with 100% recyclable materials.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testdrive">
+        <div class="container">
+            <h2>Book a Test Drive</h2>
+            <p>Experience the EcoDrive X1 for yourself. Fill out the form below to schedule a test drive.</p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="date">Preferred Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <input type="submit" value="Book Now">
+            </form>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <div class="container">
+            <h2>What People Are Saying</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-item">
+                    <blockquote>"The EcoDrive X1 is a game-changer in the electric car market!"</blockquote>
+                    <cite>— Ankush Gupta, Auto Reviewer</cite>
+                </div>
+                <div class="testimonial-item">
+                    <blockquote>"An amazing blend of technology and sustainability."</blockquote>
+                    <cite>— Pankaj Tripathi, Early Adopter</cite>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-logo">
